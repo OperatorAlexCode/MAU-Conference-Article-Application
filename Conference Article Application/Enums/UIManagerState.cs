@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Conference_Article_Application.Enums
 {
-    public enum UIManagerState
+    public enum UIState
     {
         Menu,
     }

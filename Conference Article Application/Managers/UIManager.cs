@@ -10,9 +10,9 @@ namespace Conference_Article_Application.Managers
 {
     public static class UIManager
     {
-        static UIManagerState CurrentState;
+        static UIState CurrentState;
 
-        public static void ChangeUI(UIManagerState newState)
+        public static void ChangeUI(UIState newState)
         {
             CurrentState = newState;
         }
@@ -21,7 +21,7 @@ namespace Conference_Article_Application.Managers
         {
             switch (CurrentState)
             {
-                case UIManagerState.Menu:
+                case UIState.Menu:
                     Console.WriteLine("Menu");
                     break;
             }
